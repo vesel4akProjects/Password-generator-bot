@@ -7,7 +7,7 @@ from telebot import types
 
 #token
 
-bot =telebot.TeleBot("7494407808:AAFs4_TtYrHQW7V4bo6o4iud90c7Ew1-wpY")
+bot =telebot.TeleBot("")
 
 #password varible
 
