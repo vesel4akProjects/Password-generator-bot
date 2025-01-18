@@ -18,14 +18,14 @@ password = ""
 @bot.message_handler(commands=["start"])
 
 def main(message):
-    bot.send_message(message.chat.id,f"Приветствую , {message.from_user.first_name}.Я генератор паролей из 16 цифр!\nВот список всех моих команд 🔥\n/start - перезапуск бота\n/help - список всех моих команд\n/generate - сгенерировать пароль\n\nТакже вы можете написать id ,это выведет ваш текущий id\n\nЕсли вам не трудно,то вот моя ссылка на Github:\nhttps://github.com/vesel4akProjects")
+    bot.send_message(message.chat.id ,f"Greetings, {message.from_user.first_name}.I'm a 16-digit password generator!This is a list of all my commands.\n/start - restart the bot\n/help - a list of all my commands.\n/generate - generate a password.\n\You can also write an id, this will display your current id.\n\If you don't mind, here is my link to Github:\nhttps://github.com/vesel4akProjects")
 
 #function for help message
 
 @bot.message_handler(commands=["help"])
 
 def help(message):
-    bot.send_message(message.chat.id,"Вот список всех моих команд 🔥 \n/start - перезапуск бота\n/help - список всех моих команд \n/generate - сгенерировать пароль\n \nТакже вы можете написать id ,это выведет ваш текущий id\n\nЕсли вам не трудно,то вот моя ссылка на Github:\nhttps://github.com/vesel4akProjects")
+    bot.send_message(message.chat.id "Вот список всех моих команд 🔥/start - перезапустить бота\n/help - список всех моих команд \n/generate - сгенерировать пароль\n\Вы также можете ввести id, это выведет ваш текущий id\nЕсли вам не сложно, то вот моя ссылка на Github:https://github.com/vesel4akProjects")
 
 #function for generating
 
@@ -41,7 +41,7 @@ def generate_password(message):
 
             numbers = choice(variants)
             password += numbers
-        bot.send_message(message.chat.id,f"{message.from_user.first_name} , вот твой сгенерируемый пароль 👌 \n {password}")
+        bot.send_message(message.chat.id,f " {message.from_user. first_name} , here is your generated password 👌\n {password}")
         password =""
         return
 
